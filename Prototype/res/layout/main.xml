@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ff444444"  >
+
+    <TableRow >
+
+        <TextView
+            android:id="@+id/startDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_column="4" 
+            android:layout_span="4"
+        />
+
+    </TableRow>
+    
+    <TableRow >
+        <TextView
+            android:id="@+id/endDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_column="4" 
+            android:layout_span="4"
+        />
+    </TableRow>
+    
+    <TableRow>
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="50dp" 
+        />
+        
+        <View
+            android:layout_width="25dp"
+            android:layout_height="50dp" 
+        />
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="50dp" 
+        />
+        
+        <View
+            android:layout_width="20dp"
+            android:layout_height="50dp" 
+        />
+        
+        <View
+            android:layout_width="30dp"
+            android:layout_height="50dp" 
+        />
+        
+        <View
+            android:layout_width="30dp"
+            android:layout_height="50dp" 
+        />
+        
+        <View
+            android:layout_width="20dp"
+            android:layout_height="50dp" 
+        />
+        
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp" 
+        />
+        
+        <View
+            android:layout_width="20dp"
+            android:layout_height="50dp" 
+        />
+        
+        <View
+            android:layout_width="30dp"
+            android:layout_height="50dp" 
+        />
+        
+        <View
+            android:layout_width="20dp"
+            android:layout_height="50dp" 
+        />
+        
+        <View
+            android:layout_width="30dp"
+            android:layout_height="50dp" 
+        />
+        
+    </TableRow>
+    
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/yearsLabelTextView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_column="4"
+            android:layout_span="4"
+            android:gravity="center"
+            android:text="Years"
+            android:textSize="14dp"
+        />
+    </TableRow>
+    
+    <TableRow >
+
+        <TextView
+            android:id="@+id/yearTextView"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_column="4"
+            android:layout_span="4"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="24dp"
+            android:textColor="#FF0000" 
+            android:background="#ff000000"
+            />
+			
+	</TableRow>
+		
+    <TableRow>
+        <TextView
+            android:id="@+id/monthsLabelTextView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_column="0"
+            android:layout_span="3"
+            android:gravity="center"
+            android:text="Months"
+            android:textSize="14dp"
+        />
+        
+        <TextView
+            android:id="@+id/weeksLabelTextView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_column="4"
+            android:layout_span="2"
+            android:gravity="center"
+            android:text="Weeks"
+            android:textSize="14dp"
+        />
+        
+        <TextView
+            android:id="@+id/daysLabelTextView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_column="7"
+            android:gravity="center"
+            android:text="Days"
+            android:textSize="14dp"
+        />
+        
+        <TextView
+            android:id="@+id/hoursLabelTextView"
+            android:layout_width="12dp"
+            android:layout_height="15dp"
+            android:layout_column="9"
+            android:layout_span="2"
+            android:gravity="center"
+            android:text="Hours"
+            android:textSize="14dp"
+        />
+    </TableRow>
+    
+    <TableRow>
+
+       
+
+        <TextView
+            android:id="@+id/monthsTextView"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:text="Months"
+            android:textSize="22dp"
+            android:textColor="#FFFF00" 
+            android:layout_column="0"
+            android:layout_span="3"
+            android:background="#ff000000"
+        />
+
+
+        <TextView
+            android:id="@+id/weeksTextView"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="Weeks"
+            android:textSize="22dp"
+            android:textColor="#FF0000" 
+            android:layout_column="4"
+            android:layout_span="2"
+            android:background="#ff000000"
+        />
+
+        <TextView
+            android:id="@+id/daysTextView"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_column="7"
+            android:text="Days"
+            android:textColor="#00FF00"
+            android:textSize="22dp"
+            android:background="#ff000000" 
+        />
+
+        <TextView
+            android:id="@+id/hoursTextView"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_column="9"
+            android:layout_span="3"
+            android:text="Hours"
+            android:textSize="22dp"
+            android:textColor="#FFFF00" 
+            android:background="#ff000000"
+            />
+    </TableRow>
+		
+    <TableRow>
+        
+        <TextView
+            android:id="@+id/minutesLabelTextView"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_column="5"
+            android:gravity="center"
+            android:text="Minutes"
+            android:textSize="14dp"
+        />
+            
+        <TextView
+            android:id="@+id/secondsLabelTextView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_column="7"
+            android:gravity="center"
+            android:text="Seconds"
+            android:textSize="14dp"
+        />
+        
+    </TableRow>
+    <TableRow>
+        
+        
+        <TextView
+            android:id="@+id/randomTextView1"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:text="Random"
+            android:textSize="13dp"
+            android:textColor="#00FF00" 
+            android:layout_column="0"
+            android:background="#ff000000"
+        />
+        
+        <TextView
+            android:id="@+id/randomTextView2"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_column="2"
+            android:gravity="right"
+            android:text="Random"
+            android:textColor="#00FF00"
+            android:textSize="13dp" 
+            android:background="#ff000000"
+        />
+        
+        <TextView
+            android:id="@+id/minutesTextView"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:text="Random"
+            android:textSize="13dp"
+            android:textColor="#FFFF00"
+            android:gravity="right"
+            android:layout_column="5"
+            android:background="#ff000000"
+        />
+
+        <TextView
+            android:id="@+id/secondsTextView"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:text="Random"
+            android:textSize="13dp"
+            android:textColor="#FFFF00"
+            android:gravity="right"
+            android:layout_column="7"
+            android:background="#ff000000"
+        />
+        
+        <TextView
+            android:id="@+id/randomTextView3"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:text="Random"
+            android:textSize="13dp"
+            android:textColor="#00FF00" 
+            android:layout_column="9"
+            android:background="#ff000000"
+        />
+        
+        <TextView
+            android:id="@+id/randomTextView4"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_column="11"
+            android:text="Random"
+            android:textColor="#00FF00"
+            android:textSize="13dp" 
+            android:background="#ff000000"
+        />
+    </TableRow>
+    <TableRow >
+        <View
+            android:layout_width="20dp"
+            android:layout_height="50dp" 
+        />
+        
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/setStartDateButton"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="Set Start Date" 
+            android:layout_span="6"
+        />
+        
+        <Button
+            android:id="@+id/setEndDateButton"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="Set End Date" 
+            android:layout_span="6"
+        />
+        
+    </TableRow>
+</TableLayout>
