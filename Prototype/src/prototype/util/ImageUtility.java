@@ -12,6 +12,7 @@ import java.awt.*;
 public final class ImageUtility
 {
 
+	//TODO: what is it be initialized in the constructor
 	public ImageUtility()
 	{
 		
@@ -28,11 +29,13 @@ public final class ImageUtility
         return bufferedImage;
     }
 	
+	//TODO: how to set up a place to store images and how to retrieve them
 	public ArrayList<Image> getAllImagesFromDatabase()
 	{
 		
 	}
 	
+	//TODO: discuss how we are going to implement this
 	public Image getTheme(String themeName)
 	{
 		

@@ -1,6 +1,6 @@
 package prototype.util;
 
-//Singleton
+//TODO: discuss all that needs to be included in this class
 public class DatabaseManager {
 	private static DatabaseManager instance = null;
 	
@@ -18,5 +18,7 @@ public class DatabaseManager {
 		
 		return instance;
 	}
+	
+	//TODO: create a table for users settings, users events (birthday, wedding etc) and users customizations.  
 
 }
