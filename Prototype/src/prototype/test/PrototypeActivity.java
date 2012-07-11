@@ -121,7 +121,6 @@ public class PrototypeActivity extends Activity {
         System.out.println("  Difference between " + endDate);
         System.out.println("  and " + startDate + " is " + startDay + " days.");
         
-        
         startDateTextView = (TextView) findViewById(R.id.startDateTextView);
         endDateTextView = (TextView) findViewById(R.id.endDateTextView);
         yearsTextView = (TextView) findViewById(R.id.yearTextView);

@@ -50,36 +50,145 @@ public class AsyncTimer extends AsyncTask<Void,String,Boolean>{
 						int ey, int em, int ed)
     {		
 		
-		startYear = sy;
-		startMonth = sm;
-		startDay = sd;
+		this.startYear = sy;
+		this.startMonth = sm;
+		this.startDay = sd;
 		
-		endYear = ey;
-		endMonth = em;
-		endDay = ed;
+		this.endYear = ey;
+		this.endMonth = em;
+		this.endDay = ed;
 		
-		startTime = new DateTime(startYear,startMonth,startDay,0,0,0,0);
-		endTime = new DateTime(endYear,endMonth,endDay,0,0,0,0);
+		this.startTime = new DateTime(startYear,startMonth,startDay,0,0,0,0);
+		this.endTime = new DateTime(endYear,endMonth,endDay,0,0,0,0);
 		
-		startDateTextView = textViewArray[0];
-		endDateTextView = textViewArray[1];
-		yearsTextView = textViewArray[2];
-		monthsTextView = textViewArray[3];
-		weeksTextView = textViewArray[4];
-		daysTextView = textViewArray[5];
-		hoursTextView = textViewArray[6];
-		minutesTextView = textViewArray[7];
-		secondsTextView = textViewArray[8];
-		
-		years = Years.yearsBetween(startTime, endTime).getYears();
-		months = Months.monthsBetween(startTime, endTime).getMonths();
-		weeks = Weeks.weeksBetween(startTime, endTime).getWeeks();
-		days = Days.daysBetween(startTime, endTime).getDays();
-		hours = Hours.hoursBetween(startTime, endTime).getHours();
-		minutes = Minutes.minutesBetween(startTime, endTime).getMinutes();
-		seconds = Seconds.secondsBetween(startTime, endTime).getSeconds();
+		this.startDateTextView = textViewArray[0];
+		this.endDateTextView = textViewArray[1];
+		this.yearsTextView = textViewArray[2];
+		this.monthsTextView = textViewArray[3];
+		this.weeksTextView = textViewArray[4];
+		this.daysTextView = textViewArray[5];
+		this.hoursTextView = textViewArray[6];
+		this.minutesTextView = textViewArray[7];
+		this.secondsTextView = textViewArray[8];
+	
+		this.years = Years.yearsBetween(startTime, endTime).getYears();
+		this.months = Months.monthsBetween(startTime, endTime).getMonths();
+		this.weeks = Weeks.weeksBetween(startTime, endTime).getWeeks();
+		this.days = Days.daysBetween(startTime, endTime).getDays();
+		this.hours = Hours.hoursBetween(startTime, endTime).getHours();
+		this.minutes = Minutes.minutesBetween(startTime, endTime).getMinutes();
+		this.seconds = Seconds.secondsBetween(startTime, endTime).getSeconds();
     }
+	
+	/* TODO
+	 * To figure out exactly which settings the timer should countdown for,
+	 * just iterate through all of the date variables and check which ones have been set.
+	 * Then, just set the corresponding text views.
+	 */
+	
+	//*****setter textView methods ***************//
+	public void setSecondsTextView(TextView textView)
+	{
+		this.secondsTextView = textView;
+	}
+	
+	public void setMinutesTextView(TextView textView)
+	{
+		this.minutesTextView = textView;
+	}
+	
+	public void setHoursTextView(TextView textView)
+	{
+		this.hoursTextView = textView;
+	}
+	
+	public void setDaysTextView(TextView textView)
+	{
+		this.daysTextView = textView;
+	}
+	
+	public void setMonthsTextView(TextView textView)
+	{
+		this.monthsTextView = textView;
+	}
+	
+	public void setYearssTextView(TextView textView)
+	{
+		this.yearsTextView = textView;
+	}
+	
+	//*****setter date variables methods ***************//
+	public void setSeconds(int secs)
+	{
+		this.seconds = secs;
+	}
 
+	public void setMinutes(int mins)
+	{
+		this.minutes = mins;
+	}
+	
+	public void setHours(int hrs)
+	{
+		this.hours = hrs;
+	}
+	
+	public void setDays(int dys)
+	{
+		this.days = dys;
+	}
+	
+	public void setWeeks(int wks)
+	{
+		this.weeks = wks;
+	}
+	
+	public void setMonths(int mths)
+	{
+		this.months = mths;
+	}
+	
+	public void setYears(int yrs)
+	{
+		this.years = yrs;
+	}
+	
+	
+	//getter methods
+	public int getSeconds()
+	{
+		return this.seconds;
+	}
+
+	public int getMinutes()
+	{
+		return this.minutes;
+	}
+	
+	public int getHours()
+	{
+		return this.hours;
+	}
+	
+	public int getDays()
+	{
+		return this.days;
+	}
+	
+	public int getWeeks()
+	{
+		return this.weeks;
+	}
+	
+	public int getMonths()
+	{
+		return this.months;
+	}
+	
+	public int getYears()
+	{
+		return this.years;
+	}
 
 	@Override
 	protected Boolean doInBackground(Void... arg0) 
