@@ -49,35 +49,34 @@ public class AsyncTimer extends AsyncTask<Void,String,Boolean>{
 	public AsyncTimer(TextView[] textViewArray,int sy,int sm,int sd,
 						int ey, int em, int ed)
     {		
+		this.startYear = -1;
+		this.startMonth = -1;
+		this.startDay = -1;
 		
-		this.startYear = sy;
-		this.startMonth = sm;
-		this.startDay = sd;
+		this.endYear = -1;
+		this.endMonth = -1;
+		this.endDay = -1;
 		
-		this.endYear = ey;
-		this.endMonth = em;
-		this.endDay = ed;
+		this.startTime = null;
+		this.endTime = null;
 		
-		this.startTime = new DateTime(startYear,startMonth,startDay,0,0,0,0);
-		this.endTime = new DateTime(endYear,endMonth,endDay,0,0,0,0);
-		
-		this.startDateTextView = textViewArray[0];
-		this.endDateTextView = textViewArray[1];
-		this.yearsTextView = textViewArray[2];
-		this.monthsTextView = textViewArray[3];
-		this.weeksTextView = textViewArray[4];
-		this.daysTextView = textViewArray[5];
-		this.hoursTextView = textViewArray[6];
-		this.minutesTextView = textViewArray[7];
-		this.secondsTextView = textViewArray[8];
+		this.startDateTextView = null;
+		this.endDateTextView = null;
+		this.yearsTextView = null;
+		this.monthsTextView = null;
+		this.weeksTextView = null;
+		this.daysTextView = null;
+		this.hoursTextView = null;
+		this.minutesTextView = null;
+		this.secondsTextView = null;
 	
-		this.years = Years.yearsBetween(startTime, endTime).getYears();
-		this.months = Months.monthsBetween(startTime, endTime).getMonths();
-		this.weeks = Weeks.weeksBetween(startTime, endTime).getWeeks();
-		this.days = Days.daysBetween(startTime, endTime).getDays();
-		this.hours = Hours.hoursBetween(startTime, endTime).getHours();
-		this.minutes = Minutes.minutesBetween(startTime, endTime).getMinutes();
-		this.seconds = Seconds.secondsBetween(startTime, endTime).getSeconds();
+		this.years = -1;
+		this.months = -1;
+		this.weeks = -1;
+		this.days = -1;
+		this.hours = -1;
+		this.minutes = -1;
+		this.seconds = -1;
     }
 	
 	/* TODO
@@ -112,47 +111,57 @@ public class AsyncTimer extends AsyncTask<Void,String,Boolean>{
 		this.monthsTextView = textView;
 	}
 	
-	public void setYearssTextView(TextView textView)
+	public void setYearsTextView(TextView textView)
 	{
 		this.yearsTextView = textView;
 	}
 	
 	//*****setter date variables methods ***************//
-	public void setSeconds(int secs)
+	public void setSeconds(DateTime strtTm,DateTime endTm)
 	{
-		this.seconds = secs;
+		this.seconds = Seconds.secondsBetween(startTime, endTime).getSeconds();
 	}
 
-	public void setMinutes(int mins)
+	public void setMinutes(DateTime strtTm,DateTime endTm)
 	{
-		this.minutes = mins;
+		this.minutes = Minutes.minutesBetween(startTime, endTime).getMinutes();
 	}
 	
-	public void setHours(int hrs)
+	public void setHours(DateTime strtTm,DateTime endTm)
 	{
-		this.hours = hrs;
+		this.hours = Hours.hoursBetween(startTime, endTime).getHours();
 	}
 	
-	public void setDays(int dys)
+	public void setDays(DateTime strtTm,DateTime endTm)
 	{
-		this.days = dys;
+		this.days = Days.daysBetween(startTime, endTime).getDays();
 	}
 	
-	public void setWeeks(int wks)
+	public void setWeeks(DateTime strtTm,DateTime endTm)
 	{
-		this.weeks = wks;
+		this.weeks = Weeks.weeksBetween(startTime, endTime).getWeeks();
 	}
 	
-	public void setMonths(int mths)
+	public void setMonths(DateTime strtTm,DateTime endTm)
 	{
-		this.months = mths;
+		this.months = Months.monthsBetween(startTime, endTime).getMonths();
 	}
 	
-	public void setYears(int yrs)
+	public void setYears(DateTime strtTm,DateTime endTm)
 	{
-		this.years = yrs;
+		this.years = Years.yearsBetween(startTime, endTime).getYears();
 	}
 	
+	//setter methods for start/end time
+	public void setStartTime(int startYear,int startMonth,int startDay)
+	{
+		this.startTime = new DateTime(startYear,startMonth,startDay,0,0,0,0);
+	}
+	
+	public void setEndTime(int endYear, int endMonth, int endDay)
+	{
+		this.endTime = new DateTime(endYear,endMonth,endDay,0,0,0,0);
+	}
 	
 	//getter methods
 	public int getSeconds()

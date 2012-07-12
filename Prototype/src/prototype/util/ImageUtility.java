@@ -7,7 +7,7 @@
  */
 package prototype.util;
 
-import java.awt.*;
+import java.util.ArrayList;
 
 public final class ImageUtility
 {
