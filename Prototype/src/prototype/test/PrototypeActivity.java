@@ -218,8 +218,9 @@ private void updateDisplay(final int dialog_int)
 			timer.cancel(true);
 			timer = null;
 		}
-		timer = new AsyncTimer(textViewArray, startYear,startMonth,startDay,
-				endYear,endMonth,endDay);
+		//timer = new AsyncTimer(textViewArray, startYear,startMonth,startDay,
+		//		endYear,endMonth,endDay);
+		timer = new AsyncTimer();
 		timer.execute(null);
 	}
 }

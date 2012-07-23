@@ -17,7 +17,7 @@ public final class ImageUtility
 	{
 		
 	}
-	
+/*	
 	public static BufferedImage resizeImage(final Image image, int width, int height)
 	{
         final BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
@@ -40,5 +40,5 @@ public final class ImageUtility
 	{
 		
 	}
-	
+	*/
 }

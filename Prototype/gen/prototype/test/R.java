@@ -14,31 +14,45 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+        public static final int button1=0x7f050017;
+        public static final int chooseEndDate=0x7f050018;
+        public static final int chooseStartDate=0x7f050019;
+        public static final int daysCheckbox=0x7f05001f;
         public static final int daysLabelTextView=0x7f050006;
         public static final int daysTextView=0x7f05000a;
         public static final int endDateTextView=0x7f050001;
+        public static final int endDateValue=0x7f050021;
+        public static final int hoursCheckbox=0x7f05001e;
         public static final int hoursLabelTextView=0x7f050007;
         public static final int hoursTextView=0x7f05000b;
+        public static final int minutesCheckbox=0x7f050020;
         public static final int minutesLabelTextView=0x7f05000c;
         public static final int minutesTextView=0x7f050010;
+        public static final int monthsCheckbox=0x7f05001c;
         public static final int monthsLabelTextView=0x7f050004;
         public static final int monthsTextView=0x7f050008;
         public static final int randomTextView1=0x7f05000e;
         public static final int randomTextView2=0x7f05000f;
         public static final int randomTextView3=0x7f050012;
         public static final int randomTextView4=0x7f050013;
+        public static final int secondsCheckbox=0x7f05001a;
         public static final int secondsLabelTextView=0x7f05000d;
         public static final int secondsTextView=0x7f050011;
         public static final int setEndDateButton=0x7f050015;
         public static final int setStartDateButton=0x7f050014;
         public static final int startDateTextView=0x7f050000;
+        public static final int startDateValue=0x7f050016;
+        public static final int weeksCheckbox=0x7f05001d;
         public static final int weeksLabelTextView=0x7f050005;
         public static final int weeksTextView=0x7f050009;
         public static final int yearTextView=0x7f050003;
+        public static final int yearsCheckbox=0x7f05001b;
         public static final int yearsLabelTextView=0x7f050002;
+        public static final int yearsTextView=0x7f050022;
     }
     public static final class layout {
         public static final int main=0x7f030000;
+        public static final int run_timer=0x7f030001;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
