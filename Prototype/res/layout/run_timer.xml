@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/startDateValue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button1"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/chooseEndDate"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        android:text="Choose End Date" />
+
+    <Button
+        android:id="@+id/chooseStartDate"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Choose Start Date" />
+
+    <CheckBox
+        android:id="@+id/secondsCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseEndDate"
+        android:layout_centerHorizontal="true"
+        android:text="Seconds" />
+
+    <CheckBox
+        android:id="@+id/yearsCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/secondsCheckbox"
+        android:text="Years" />
+
+    <CheckBox
+        android:id="@+id/monthsCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/yearsCheckbox"
+        android:layout_alignBottom="@+id/yearsCheckbox"
+        android:layout_alignLeft="@+id/secondsCheckbox"
+        android:text="Months" />
+
+    <CheckBox
+        android:id="@+id/weeksCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/monthsCheckbox"
+        android:layout_alignBottom="@+id/monthsCheckbox"
+        android:layout_alignParentRight="true"
+        android:text="Weeks" />
+
+    <CheckBox
+        android:id="@+id/hoursCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/monthsCheckbox"
+        android:layout_below="@+id/monthsCheckbox"
+        android:layout_marginTop="41dp"
+        android:text="Hours" />
+
+    <CheckBox
+        android:id="@+id/daysCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hoursCheckbox"
+        android:layout_alignBottom="@+id/hoursCheckbox"
+        android:layout_alignParentLeft="true"
+        android:text="Days" />
+
+    <CheckBox
+        android:id="@+id/minutesCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hoursCheckbox"
+        android:layout_alignBottom="@+id/hoursCheckbox"
+        android:layout_alignParentRight="true"
+        android:text="Minutes" />
+
+    <EditText
+        android:id="@+id/endDateValue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chooseEndDate"
+        android:layout_alignBottom="@+id/chooseEndDate"
+        android:layout_alignParentRight="true"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/secondsTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hoursCheckbox"
+        android:layout_marginTop="42dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/minutesTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hoursCheckbox"
+        android:layout_below="@+id/hoursCheckbox"
+        android:layout_marginTop="42dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/hoursTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/minutesCheckbox"
+        android:layout_marginTop="42dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/daysTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/secondsTextView"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/weeksTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/minutesTextView"
+        android:layout_below="@+id/minutesTextView"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/monthsTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weeksTextView"
+        android:layout_alignBottom="@+id/weeksTextView"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/yearsTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weeksTextView"
+        android:layout_below="@+id/weeksTextView"
+        android:inputType="number" />
+
+</RelativeLayout>
